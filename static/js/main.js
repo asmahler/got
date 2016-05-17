@@ -1,6 +1,3 @@
-console.log('test');
-
-
 function background(){
 var images = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
 var background = document.querySelector('body');
