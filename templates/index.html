@@ -8,7 +8,19 @@
 	<form action="/show" method ="POST" role="form">
 		<div class="form-group">
 			<label for="pick">Choose A Character:</label>
-			<input type="text" class="form-control" id="pick" name="name">
+			<select class='form-control' id ='pick' name='name'>
+				<option value='Jon Snow'>Jon Snow</option>
+				<option value="Daenerys"> Daenerys </option>
+				<option value="Melisandre"> Melisandre </option>
+				<option value="Ayra Stark"> Ayra Stark </option>
+				<option value="Sansa Stark"> Sansa Stark </option>
+				<option value="Tyrion Lannister"> Tyrion Lannister</option>
+				<option value="Jaime Lannister">Jaime Lannister</option>
+				<option value="Petyr Baelish">Petyr Baelish</option>
+				<option value="Jorah Mormont">Jorah Mormont</option>
+				<option value="Theon Greyjoy">Theon Greyjoy</option>
+				<option value="Ramsay Bolton">Ramsay Bolton</option>
+			</select>
 		</div>
 			<button type="submit" class="btn btn-default">Submit</button>
 	</form>
