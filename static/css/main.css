@@ -14,25 +14,13 @@ body{
 }
 
 h1{
-	font-size: 60px;
-	color:#ebebeb;
+	font-size: 80px;
+	color:#5d5c58;
 }
+#death{ 
+	margin: 200px auto;
+ }
 
-#container{
-	margin: 100px auto;
-	height: 600px;
-	width: 800px;
-	background-color:white;
-	opacity: 0.5; 
-
-}
-
-@media screen and (max-width:820px){
-	#container{
-	margin: 100px auto;
-	height: 500px;
-	width: 700px;
-	background-color:white;
-	opacity: 0.5; 
-	}
+#death h1{
+	color:black;
 }

@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>GOT SPOILERS</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
+
+
 <h1> SPOILERS OF THRONES </h1>
 
-<div id ='container'>
-	<form action="/show" method ="POST">
-		<div>
-			<input type="text" name ="name"></input> 
+<div class = "container">
+	<form action="/show" method ="POST" role="form">
+		<div class="form-group">
+			<label for="pick">Choose A Character:</label>
+			<input type="text" class="form-control" id="pick" name="name">
 		</div>
-		<div>
-			<input type= "submit" value="submit"></input>
-		</div>
+			<button type="submit" class="btn btn-default">Submit</button>
 	</form>
-
-
-
 </div>
 
-<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
-</body>
-</html>
+
+			
+	
+
+{% endblock %}
