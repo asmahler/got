@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect,url_for
 
 app = Flask(__name__) 
 
@@ -12,11 +12,11 @@ def index():
 
 @app.route('/show',methods=['GET','POST'])
 def show(): 
-	name = request.form['name']
 	if request.method == "POST":
+		name = request.form['name']
 		return render_template('show.html',name=name)
-	else: 
-		return render_template('spoilers.html')
+	elif request.method == "GET":
+		return redirect(url_for('index'))
 
 
 
