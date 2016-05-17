@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEST</title>
+	<title>GOT SPOILERS</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
@@ -9,11 +9,19 @@
 <h1> SPOILERS OF THRONES </h1>
 
 <div id ='container'>
+	<form action="/show" method ="POST">
+		<div>
+			<input type="text" name ="name"></input> 
+		</div>
+		<div>
+			<input type= "submit" value="submit"></input>
+		</div>
+	</form>
 
 
 
 </div>
 
-
+<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
